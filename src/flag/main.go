@@ -4,7 +4,9 @@ import (
 	"fmt"
 	"flag"
 	"os"
-)
+	"../test1"
+	test12 "../test2/test1"
+	)
 
 var name string
 
@@ -19,5 +21,7 @@ func main() {
 	}
 	flag.Parse()
 	fmt.Printf("hello, %s!\n", name)
+	test1.Hello()
+	test12.Hello()
 }
 
